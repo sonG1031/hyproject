@@ -30,4 +30,4 @@ def create():
         db.session.add(question)
         db.session.commit()
         return redirect(url_for('main.index'))
-    return render_template('question/question_form.html', form = form)
+    return render_template('question/question_form.html', form=form)
