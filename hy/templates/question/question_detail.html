@@ -31,7 +31,7 @@
         {% endif %}
         <!-- 오류표시 End -->
         <div class="mb-3">
-            <textarea name="content" id="content" class="form-control" rows="10"></textarea>
+            <textarea {% if not g.user %} disabled {% endif %} name="content" id="content" class="form-control" rows="10"></textarea>
         </div>
         <input type="submit" value="전송" class="btn bg-dark border-dark btn-primary">
     </form>
